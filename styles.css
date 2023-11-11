@@ -1,0 +1,168 @@
+body, ul, li, h1, h2, a{
+    margin: 0; 
+    padding: 0;
+    font-family: Arial;
+}
+
+
+
+nav.mainnav{
+    background-color: rgba(183, 243, 243, 0.8);
+    border: rgba(183, 243, 243, 0.8);
+    border-radius: 10px;
+    position: sticky;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 16%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(0, 121, 121);
+}
+nav li a:hover{
+    text-decoration: underline;
+}
+
+
+.mainbanner{
+    position: relative
+}
+.mainbanner img{
+    width: 100%;
+    max-width: 100%;
+    height: 50%;
+    opacity: 80%;
+
+}
+.mainbanner .webname{
+    background-color: bisque;
+    color: rgb(79, 133, 115);
+    padding: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+}
+.mainbanner h2{
+    font-size: 60px;
+}
+
+.bikedisplays img{
+    max-width: 50%;
+    height: 50%;
+    opacity: 80%;
+
+}
+
+p{
+    color: gray;
+}
+
+body{
+    background: rgb(236, 236, 236);
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2{
+    color: rgb(0, 121, 121);
+    font-size: 48px;
+}
+
+article p{
+    line-height: 2em;
+}
+
+.signup{
+    background: rgb(202, 202, 202);
+    text-align: center;
+    padding: 60px 20px;
+}
+.signup h3{
+    font-size: 36px;
+}
+.signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+.signup form input[type="submit"] {
+    text-align: center;
+    border: 0px solid white;
+    padding: 15px;
+    background-color: rgb(183, 243, 243);
+    /* color: rgb(79, 133, 115); */
+}
+.signup form input[type="submit"]:hover{
+    background-color: rgb(160, 211, 211);
+    padding: 17px;
+}
+
+
+@media screen and (max-width: 1400px){
+
+    .mainbanner h2{
+        font-size: 55px;
+    }
+
+    nav li{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .mainbanner .webname{
+        left: 20%;
+    }
+
+    .mainbanner h2{
+        font-size: 45px;
+    }
+
+    nav li{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .mainbanner .webname{
+        left: 10%;
+    }
+
+    .mainbanner h2{
+        font-size: 35px;
+    }
+
+    nav li{
+        font-size: 10px;
+    }
+}
